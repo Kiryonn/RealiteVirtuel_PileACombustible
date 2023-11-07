@@ -25,6 +25,7 @@ public class PolarisationChart : MonoBehaviour
 	{
 		_zoomSlider.onValueChanged.AddListener(delegate { OnZoomValueChanged(); });
 		_addPointButton.onClick.AddListener(delegate { OnAddPointButtonPressed(); });
+		_pointContextMenu.GetComponentInChildren<Button>().onClick.AddListener(delegate { OnContextMenuDeletePresssed(); });
 	}
 
 	#region add_point
